@@ -19,6 +19,7 @@ import psutil
 from skore.project.project import Project, logger
 from skore.utils._environment import is_environment_notebook_like
 from skore.utils._logger import logger_context
+from security import safe_command
 
 
 def find_free_port(min_port: int = 22140, max_attempts: int = 100) -> int:
@@ -198,8 +199,7 @@ def start_server_in_subprocess(project: Project, port: int, open_browser: bool):
         str(project.path),
     ]
 
-    process = subprocess.Popen(
-        cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True
+    process = safe_command.run(subprocess.Popen, cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True
     )
 
     if is_server_started(port):
