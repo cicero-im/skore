@@ -35,7 +35,7 @@ execnet==2.1.1
     # via pytest-xdist
 fastapi==0.115.8
     # via skore (skore/pyproject.toml)
-filelock==3.17.0
+filelock==3.20.3
     # via
     #   huggingface-hub
     #   virtualenv
@@ -55,7 +55,7 @@ huggingface-hub==0.28.1
     # via skops
 identify==2.6.6
     # via pre-commit
-idna==3.10
+idna==3.15
     # via
     #   anyio
     #   httpx
@@ -99,7 +99,7 @@ numpy==2.0.2
     #   scipy
     #   skore (skore/pyproject.toml)
     #   skrub
-orjson==3.10.15
+orjson==3.11.6
     # via skore (skore/pyproject.toml)
 packaging==24.2
     # via
@@ -114,7 +114,7 @@ pandas==2.2.3
     # via
     #   skore (skore/pyproject.toml)
     #   skrub
-pillow==11.1.0
+pillow==12.2.0
     # via
     #   matplotlib
     #   skore (skore/pyproject.toml)
@@ -142,7 +142,7 @@ pygments==2.19.1
     # via rich
 pyparsing==3.2.1
     # via matplotlib
-pytest==8.3.4
+pytest==9.0.3
     # via
     #   pytest-cov
     #   pytest-order
@@ -171,7 +171,7 @@ referencing==0.36.2
     # via
     #   jsonschema
     #   jsonschema-specifications
-requests==2.32.3
+requests==2.33.0
     # via
     #   huggingface-hub
     #   skrub
@@ -221,9 +221,9 @@ typing-extensions==4.12.2
     #   referencing
 tzdata==2025.1
     # via pandas
-urllib3==2.3.0
+urllib3==2.7.0
     # via requests
 uvicorn==0.34.0
     # via skore (skore/pyproject.toml)
-virtualenv==20.29.1
+virtualenv==20.36.1
     # via pre-commit
